@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers+ Consultancy Services - Job Portal</title>
+    
+    <style>
+        /* --- Global & Theme --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Light grey background */
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px; /* Wider container for content */
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden; /* Contains the header's top corners */
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #0056b3; /* Professional blue */
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* --- Content Sections --- */
+        .content-section {
+            padding: 25px 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .content-section h2 {
+            font-size: 1.6em;
+            color: #0056b3;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        .content-section p, .content-section ul {
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #555;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+
+        /* --- Form --- */
+        #form-section {
+            padding: 30px;
+            background-color: #fdfdfd;
+        }
+        
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #fff;
+        }
+        legend {
+            font-weight: 600;
+            font-size: 1.3em;
+            color: #0056b3;
+            padding: 0 10px;
+            margin-left: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between fields in a row */
+        }
+        .form-group {
+            flex: 1; /* Each field takes equal space */
+            min-width: 200px; /* Prevents fields from becoming too small */
+            margin-bottom: 20px;
+        }
+        .form-group.full-width {
+            flex-basis: 100%; /* Makes a field take the full width */
+        }
+
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 600; 
+            color: #444;
+            font-size: 0.95em;
+        }
+        
+        input[type="text"], 
+        input[type="email"],
+        input[type="file"],
+        select { 
+            width: 100%; 
+            padding: 12px; 
+            box-sizing: border-box; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #fcfcfc;
+        }
+        
+        input[type="file"] {
+            padding: 8px;
+        }
+
+        .submit-button { 
+            background-color: #007bff; 
+            color: white; 
+            padding: 15px 25px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #333;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Teachers+ Consultancy Services</h1>
+        </header>
+
+        <section class="content-section">
+            <h2>About Us</h2>
+            <p>
+                We are a team of education professionals connected with the topmost schools in North and Central India. 
+                Originating from Indore, we are one of the well-known teams in school connections and academic improvement.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>What We Do</h2>
+            <p>
+                We take opportunities from school owners directly and share them with deserving teachers.
+            </p>
+            
+            <h3>Consultancy Fee</h3>
+            <p>
+                We do not charge any fees from teachers.
+            </p>
+
+            <h3>Interview Training Program</h3>
+            <p>
+                We all know the reality of B.Ed Colleges. We have a specialized Interview Training Program for teachers 
+                where we make them able to speak, able to answer, and most importantly, what not to speak.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Workflow</h2>
+            <p>
+                Once a teacher uploads their resume to our database, we will share relative opportunities with them. 
+                If they are interested, we will send the resume to the school owner.
+            </p>
+            <ul>
+                <li>Once the interview is scheduled, we will make you aware of the date, timings, and location.</li>
+                <li>We will take feedback from the school after your interview.</li>
+                <li>Once we get feedback, we will inform you to get ahead.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Message to Teachers</h2>
+            <p>
+                At Teachers+, we believe in your potential. Our mission is to connect your talent with the right opportunity,
+                without any fees. We're here to guide you, train you, and help you build a rewarding career. 
+                Let's grow together.
+            </p>
+        </section>
+
+        <section id="form-section">
+            
+            <form action="https://getform.io/f/aolzpxmb" method="POST" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <div class="form-row">
+                        <div class="form-group" style="flex-basis: 100px; min-width: 100px;">
+                            <label for="title">Title:</label>
+                            <select id="title" name="title" required>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Dr.">Dr.</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Professional Profile</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="total_experience">Total Teaching Experience:</label>
+                            <select id="total_experience" name="total_experience" required>
+                                <option value="Fresher">Fresher (0 Years)</option>
+                                <option value="0-1 Year">0 - 1 Year</option>
+                                <option value="1-3 Years">1 - 3 Years</option>
+                                <option value="3-5 Years">3 - 5 Years</option>
+                                <option value="5-10 Years">5 - 10 Years</option>
+                                <option value="10+ Years">10+ Years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject_interested">Subject Interested:</label>
+                            <input type="text" id="subject_interested" name="subject_interested" placeholder="e.g., PGT Physics, TGT Maths" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="current_salary">Current Salary (per annum):</label>
+                            <input type="text" id="current_salary" name="current_salary" placeholder="e.g., 5.5 LPA or 40,000 / month">
+                        </div>
+                        <div class="form-group">
+                            <label for="expected_salary">Expected Salary (per annum):</label>
+                            <input type="text" id="expected_salary" name="expected_salary" placeholder="e.g., 6.0 LPA">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="relocation">Ready For Relocation?</label>
+                            <select id="relocation" name="relocation" required>
+                                <option value="No">No</option>
+                                <option value="Yes">Yes</option>
+                                <option value="Yes (Specific Cities Only)">Yes (Specific Cities Only)</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Recent Work Experience 1</legend>
+                    <div class="form-group full-width">
+                        <label for="exp1_school_name">School Name:</label>
+                        <input type="text" id="exp1_school_name" name="exp1_school_name">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="exp1_position">Position Held:</label>
+                            <input type="text" id="exp1_position" name="exp1_position" placeholder="e.g., Senior Coordinator, HOD Science">
+                        </div>
+                        <div class="form-group">
+                            <label for="exp1_duration">Duration:</label>
+                            <input type="text" id="exp1_duration" name="exp1_duration" placeholder="e.g., Jan 2020 - Present">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="exp1_salary">Salary:</label>
+                        <input type="text" id="exp1_salary" name="exp1_salary" placeholder="e.g., 45,000 / month">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Recent Work Experience 2</legend>
+                    <div class="form-group full-width">
+                        <label for="exp2_school_name">School Name:</label>
+                        <input type="text" id="exp2_school_name" name="exp2_school_name">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="exp2_position">Position Held:</label>
+                            <input type="text" id="exp2_position" name="exp2_position">
+                        </div>
+                        <div class="form-group">
+                            <label for="exp2_duration">Duration:</label>
+                            <input type="text" id="exp2_duration" name="exp2_duration" placeholder="e.g., Mar 2018 - Dec 2019">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="exp2_salary">Salary:</label>
+                        <input type="text" id="exp2_salary" name="exp2_salary">
+                    </div>
+                </Cfieldset>
+
+                <fieldset>
+                    <legend>Upload Your Resume</legend>
+                    <div class="form-group full-width">
+                        <label for="resume">Resume (PDF or Word Doc):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Submit Application</button>
+
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p><strong>Teachers+ Consultancy Services</strong></p>
+        <p>Email: <a href="mailto:mp4recruiter@gmail.com">mp4recruiter@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918602348570">+91 8602348570</a></D>
+    </footer>
+
+</body>
+</html>
